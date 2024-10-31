@@ -1,6 +1,6 @@
 # ReactQuestionAnswer
 
-        ## REACT
+        *** REACT  ***
 </hr>
 1. Why do we need to `import React from "react"` in our files?
 React is what defines JSX
@@ -27,7 +27,7 @@ to tell it HOW to do each step.
 We have small pieces that we can put together to make something
 larger/greater than the individual pieces.
 
-
+        *** CUSTOM COMPONENTS ***
 ## CUSTOM COMPONENTS
 1. What is a React component?
 A function that returns React elements. (UI)
