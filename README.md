@@ -207,7 +207,7 @@ be saved in state. Other form elements use the `value` property instead.
 - Can watch for the submit with an onSubmit handler on the `form` element.
 - Can trigger the form submit with a button click.
 
-\## HOOKS
+## HOOKS
 1. What is a "side effect" in React? What are some examples?
 - Any code that affects an outside system.
 - local storage, API, websockets, two states to keep in sync
@@ -230,3 +230,6 @@ be saved in state. Other form elements use the `value` property instead.
 4. How would you explain what the "dependecies array" is?
 - Second paramter to the useEffect function
 - A way for React to know whether it should re-run the effect function
+
+5. WHy should we use Hooks with function components?
+- Hooks add state to function components
