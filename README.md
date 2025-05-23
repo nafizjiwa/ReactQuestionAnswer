@@ -28,14 +28,14 @@ We need our JSX to be nested under a single parent element. </br>
 
 4. What does it mean for something to be "declarative" instead of "imperative"?</br>
 
-        Declarative means I can tell the computer WHAT to do 
-        and expect it to handle the details. Imperative means I need
-        to tell it HOW to do each step.
+   `Declarative` means I can tell the computer WHAT to do </br>
+   and expect it to handle the details.</br>
+   `Imperative` means I need to tell it HOW to do each step.</br>
 
 5. What does it mean for something to be "composable"?</br>
 
-   We have small pieces that we can put together to make something
-   larger/greater than the individual pieces.
+   We have small pieces that we can put together to make something</br>
+   larger/greater than the individual pieces.</br>
 
 6. How is JSX is transpiled?</br>
 
