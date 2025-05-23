@@ -11,10 +11,10 @@ Page refers to a JavaScript object containing React elements that describe the s
 
 3. What's wrong with this code:</br>
 ```
-        const page = (
-            <h1>Hello</h1>
-            <p>This is my website!</p>
-        )
+const page = (
+   <h1>Hello</h1>
+   <p>This is my website!</p>
+)
 ```
 We need our JSX to be nested under a single parent element. </br>
 
