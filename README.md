@@ -2,21 +2,21 @@
 
 
 ## REACT
-1. Why do we need to `import React from "react"` in our files?
+1. Why do we need to `import React from "react"` in our files?</br>
 React defines JSX. JSX is a syntax extension that looks like HTML but is actually JavaScript. </br>
 JSX gets transformed into React.createElement() calls, which React uses to create and manage virtual DOM elements.</br>
 
-2. If I were to console.log(page) in index.js, what would show up?
+2. If I were to console.log(page) in index.js, what would show up?</br>
 Page refers to a JavaScript object containing React elements that describe the structure and content of the UI that React will eventually render to real DOM.</br>
 
-3. What's wrong with this code:
+3. What's wrong with this code:</br>
 ```
         const page = (
             <h1>Hello</h1>
             <p>This is my website!</p>
         )
 ```
-We need our JSX to be nested under a single parent element. 
+We need our JSX to be nested under a single parent element. </br>
 
         const page = (
             <div> ----> Parent
@@ -26,19 +26,22 @@ We need our JSX to be nested under a single parent element.
         )
 ```
 
-4. What does it mean for something to be "declarative" instead of "imperative"?
-Declarative means I can tell the computer WHAT to do 
-and expect it to handle the details. Imperative means I need
-to tell it HOW to do each step.
+4. What does it mean for something to be "declarative" instead of "imperative"?</br>
 
-5. What does it mean for something to be "composable"?
-We have small pieces that we can put together to make something
-larger/greater than the individual pieces.
+        Declarative means I can tell the computer WHAT to do 
+        and expect it to handle the details. Imperative means I need
+        to tell it HOW to do each step.
 
-6. How is JSX is transpiled?
-By Babel, it's converted into standard JavaScript using React.createElement()
-Each JSX element becomes a React.createElement call:
-React.createElement(HTML Tag, Attribute or null, children elements)
+5. What does it mean for something to be "composable"?</br>
+
+        We have small pieces that we can put together to make something
+        larger/greater than the individual pieces.
+
+6. How is JSX is transpiled?</br>
+
+        By Babel, it's converted into standard JavaScript using React.createElement()
+        Each JSX element becomes a React.createElement call:
+        React.createElement(HTML Tag, Attribute or null, children elements)
 
     Example:
     const page = (
@@ -56,9 +59,9 @@ React.createElement(HTML Tag, Attribute or null, children elements)
         );
 7. What is the difference between `helloWorld` and `HelloWorld`?
 
-JavaScript prefers lower camel case names like `helloWorld`,
-React components use Pascal case (or upper camel case) variable names, like `HelloWorld`,
-This makes it clear that a given JSX element is a React component and not a regular HTML tag.
+        JavaScript prefers lower camel case names like `helloWorld`,
+        React components use Pascal case (or upper camel case) variable names, like `HelloWorld`,
+        This makes it clear that a given JSX element is a React component and not a regular HTML tag.
 
 ## CUSTOM COMPONENTS
 1. What is a React component?
