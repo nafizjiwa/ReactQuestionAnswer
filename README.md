@@ -59,9 +59,9 @@ React.createElement(HTML Tag, Attribute or null, children elements)</br>
         );
 7. What is the difference between `helloWorld` and `HelloWorld`?
 
-JavaScript prefers lower camel case names like `helloWorld`,
-React components use Pascal case (or upper camel case) variable names, like `HelloWorld`,
-This makes it clear that a given JSX element is a React component and not a regular HTML tag.
+JavaScript prefers lower camel case names like `helloWorld`, </br>
+React components use Pascal case (or upper camel case) variable names, like `HelloWorld`,</br>
+This makes it clear that a given JSX element is a React component and not a regular HTML tag.</br>
 
 ## CUSTOM COMPONENTS
 1. What is a React component?
