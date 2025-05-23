@@ -65,8 +65,8 @@ This makes it clear that a given JSX element is a React component and not a regu
 
 ## CUSTOM COMPONENTS
 1. What is a React component?
-A function that returns React elements. (UI)
-In React, a component is a reusable module that renders a part of our overall application. 
+A function that returns React elements. (UI)</br>
+In React, a component is a reusable module that renders a part of our overall application. </br>
 
 2. What's wrong with this code?
 ```
@@ -76,7 +76,8 @@ function MyComponent() {
     )
 }
 ```
-To actually display the component, you'll need to render it inside another component or within ReactDOM.createRoot().render(<MyComponent />) in your main file or ReactDOM.render(<Header />, document.getElementById("root")).
+To actually display the component, you'll need to render it inside another component or within ReactDOM.createRoot().render(<MyComponent />) in your main file</br>
+or ReactDOM.render(<Header />, document.getElementById("root")).
 
 3. What's wrong with this code?
 ```
@@ -90,11 +91,11 @@ function Header() {
     )
 }
 
-ReactDOM.render(<Header />, document.getElementById("root"))
+ReactDOM.render(<Header />, document.getElementById("root"))</br>
 ```
-ReactDOM.render() is outdated after React 18 use ReactDOM.createRoot() :
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header />);
+ReactDOM.render() is outdated after React 18 use ReactDOM.createRoot() : </br>
+const root = ReactDOM.createRoot(document.getElementById("root"));</br>
+root.render(<Header />);</br>
 
 ## PROPS
 1. What do props help us accomplish?
