@@ -39,9 +39,9 @@ We need our JSX to be nested under a single parent element. </br>
 
 6. How is JSX is transpiled?</br>
 
-        By Babel, it's converted into standard JavaScript using React.createElement()
-        Each JSX element becomes a React.createElement call:
-        React.createElement(HTML Tag, Attribute or null, children elements)
+By Babel, it's converted into standard JavaScript using React.createElement()</br>
+Each JSX element becomes a React.createElement call:</br>
+React.createElement(HTML Tag, Attribute or null, children elements)</br>
 
     Example:
     const page = (
