@@ -34,8 +34,8 @@ We need our JSX to be nested under a single parent element. </br>
 
 5. What does it mean for something to be "composable"?</br>
 
-        We have small pieces that we can put together to make something
-        larger/greater than the individual pieces.
+   We have small pieces that we can put together to make something
+   larger/greater than the individual pieces.
 
 6. How is JSX is transpiled?</br>
 
