@@ -3,26 +3,27 @@
 
 ## REACT
 1. Why do we need to `import React from "react"` in our files?
-React defines JSX. JSX is a syntax extension that looks like HTML but is actually JavaScript.
-JSX gets transformed into React.createElement() calls, which React uses to create and manage virtual DOM elements.
+React defines JSX. JSX is a syntax extension that looks like HTML but is actually JavaScript. </br>
+JSX gets transformed into React.createElement() calls, which React uses to create and manage virtual DOM elements.</br>
 
 2. If I were to console.log(page) in index.js, what would show up?
-Page refers to a JavaScript object containing React elements that describe the structure and content of the UI that React will eventually render to real DOM.
+Page refers to a JavaScript object containing React elements that describe the structure and content of the UI that React will eventually render to real DOM.</br>
 
 3. What's wrong with this code:
 ```
-const page = (
-    <h1>Hello</h1>
-    <p>This is my website!</p>
-)
+        const page = (
+            <h1>Hello</h1>
+            <p>This is my website!</p>
+        )
 ```
 We need our JSX to be nested under a single parent element. 
-const page = (
-    <div> ----> Parent
-        <h1>Hello</h1> ----> Child
-        <p>This is my website!</p> -----> Child
-    </div>
-)
+
+        const page = (
+            <div> ----> Parent
+                <h1>Hello</h1> ----> Child
+                <p>This is my website!</p> -----> Child
+            </div>
+        )
 ```
 
 4. What does it mean for something to be "declarative" instead of "imperative"?
