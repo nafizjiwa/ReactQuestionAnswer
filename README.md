@@ -24,7 +24,7 @@ We need our JSX to be nested under a single parent element. </br>
                 <p>This is my website!</p> -----> Child
             </div>
         )
-```
+
 
 4. What does it mean for something to be "declarative" instead of "imperative"?</br>
 
