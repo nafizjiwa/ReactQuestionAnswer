@@ -57,7 +57,8 @@ React.createElement(HTML Tag, Attribute or null, children elements)</br>
                   React.createElement("h1", null, "Hello"),
                   React.createElement("p", null, "This is my website!")
         );
-7. What is the difference between `helloWorld` and `HelloWorld`?
+        
+7. What is the difference between `helloWorld` and `HelloWorld`?</br>
 
 JavaScript prefers lower camel case names like `helloWorld`, </br>
 React components use Pascal case (or upper camel case) variable names, like `HelloWorld`,</br>
@@ -66,7 +67,7 @@ This makes it clear that a given JSX element is a React component and not a regu
 ## CUSTOM COMPONENTS
 1. What is a React component?
 A function that returns React elements. (UI)</br>
-In React, a component is a reusable module that renders a part of our overall application. </br>
+They are reusable modules that renders a part of our overall application. </br>
 
 2. What's wrong with this code?
 ```
@@ -76,8 +77,8 @@ function MyComponent() {
     )
 }
 ```
-To actually display the component, you'll need to render it inside another component or within ReactDOM.createRoot().render(<MyComponent />) in your main file</br>
-or ReactDOM.render(<Header />, document.getElementById("root")).
+First, it's rendered inside another component or Second, within ReactDOM.createRoot().render(<MyComponent />) in your main file</br>
+optionally ReactDOM.render(<Header />, document.getElementById("root")).
 
 3. What's wrong with this code?
 ```
@@ -93,28 +94,30 @@ function Header() {
 
 ReactDOM.render(<Header />, document.getElementById("root"))</br>
 ```
-ReactDOM.render() is outdated after React 18 use ReactDOM.createRoot() : </br>
+ReactDOM.render() is outdated after React 18 </br>
+USE ReactDOM.createRoot():  </br>
 const root = ReactDOM.createRoot(document.getElementById("root"));</br>
 root.render(<Header />);</br>
 
 ## PROPS
-1. What do props help us accomplish?
-Make a component more reusable.
+1. What do props help us accomplish?</br>
+Make a component more reusable.</br>
 
 
-2. How do you pass a prop into a component?
-<MyAwesomeHeader title="???" />
+2. How do you pass a prop into a component?</br>
+   <MyAwesomeHeader title="???" /></br>
+
+function Header(props) {
+    return <h1>{props.title}</h1>;
+}
 
 
-3. Can I pass a custom prop (e.g. `blahblahblah={true}`) to a native
-   DOM element? (e.g. <div blahblahblah={true}>) Why or why not?
-No, because the JSX we use to describe native DOM elements will
-be turned into REAL DOM elements by React. And real DOM elements
-only have the properties/attributes specified in the HTML specification.
-(Which doesn't include properties like `blahblahblah`)
+3. Can I pass a custom prop (e.g. `blahblahblah={true}`) to a native DOM element? (e.g. <div blahblahblah={true}>) Why or why not? </br>
+No, because the JSX we use to describe native DOM elements will be turned into REAL DOM elements by React. </br>
+And real DOM elements only have the properties/attributes specified in the HTML specification. (Which doesn't include properties like `blahblahblah`) </br>
 
 
-4. How do I receive props in a component?
+4. How do I receive props in a component?</br>
 function Navbar(props) {
     console.log(props.blahblahblah)
     return (
@@ -125,10 +128,10 @@ function Navbar(props) {
 }
 
 ## MAP
-1. What does the `.map()` array method do?
-Returns a new array. Whatever gets returned from the callback
-function provided is placed at the same index in the new array.
-Usually we take the items from the original array and modify them
+1. What does the `.map()` array method do?</br>
+Returns a new array. Whatever gets returned from the callback</br>
+function provided is placed at the same index in the new array.</br>
+Usually we take the items from the original array and modify them</br>
 in some way.
 
 
