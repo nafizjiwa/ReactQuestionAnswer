@@ -3,11 +3,11 @@
 
 ## REACT
 1. Why do we need to `import React from "react"` in our files?
-React is what defines JSX
+React defines JSX. JSX is a syntax extension that looks like HTML but is actually JavaScript.
+JSX gets transformed into React.createElement() calls, which React uses to create and manage virtual DOM elements.
 
 2. If I were to console.log(page) in index.js, what would show up?
-A JavaScript object. React elements that describe what React should
-eventually add to the real DOM for us.
+Page refers to a JavaScript object containing React elements that describe the structure and content of the UI that React will eventually render to real DOM.
 
 3. What's wrong with this code:
 ```
@@ -16,7 +16,14 @@ const page = (
     <p>This is my website!</p>
 )
 ```
-We need our JSX to be nested under a single parent element
+We need our JSX to be nested under a single parent element. 
+const page = (
+    <div> ----> Parent
+        <h1>Hello</h1> ----> Child
+        <p>This is my website!</p> -----> Child
+    </div>
+)
+```
 
 4. What does it mean for something to be "declarative" instead of "imperative"?
 Declarative means I can tell the computer WHAT to do 
@@ -27,13 +34,37 @@ to tell it HOW to do each step.
 We have small pieces that we can put together to make something
 larger/greater than the individual pieces.
 
+6. How is JSX is transpiled?
+By Babel, it's converted into standard JavaScript using React.createElement()
+Each JSX element becomes a React.createElement call:
+React.createElement(HTML Tag, Attribute or null, children elements)
+
+    Example:
+    const page = (
+      <div>
+        <h1>Hello</h1>
+        <p>This is my website!</p>
+      </div>
+    );
+
+    const page = React.createElement(
+          "div",
+          null,
+                  React.createElement("h1", null, "Hello"),
+                  React.createElement("p", null, "This is my website!")
+        );
+7. What is the difference between `helloWorld` and `HelloWorld`?
+
+JavaScript prefers lower camel case names like `helloWorld`,
+React components use Pascal case (or upper camel case) variable names, like `HelloWorld`,
+This makes it clear that a given JSX element is a React component and not a regular HTML tag.
 
 ## CUSTOM COMPONENTS
 1. What is a React component?
 A function that returns React elements. (UI)
 In React, a component is a reusable module that renders a part of our overall application. 
 
-3. What's wrong with this code?
+2. What's wrong with this code?
 ```
 function MyComponent() {
     return (
@@ -41,6 +72,7 @@ function MyComponent() {
     )
 }
 ```
+To actually display the component, you'll need to render it inside another component or within ReactDOM.createRoot().render(<MyComponent />) in your main file or ReactDOM.render(<Header />, document.getElementById("root")).
 
 3. What's wrong with this code?
 ```
@@ -56,7 +88,9 @@ function Header() {
 
 ReactDOM.render(<Header />, document.getElementById("root"))
 ```
-
+ReactDOM.render() is outdated after React 18 use ReactDOM.createRoot() :
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Header />);
 
 ## PROPS
 1. What do props help us accomplish?
