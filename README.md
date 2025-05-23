@@ -31,8 +31,9 @@ larger/greater than the individual pieces.
 ## CUSTOM COMPONENTS
 1. What is a React component?
 A function that returns React elements. (UI)
+In React, a component is a reusable module that renders a part of our overall application. 
 
-2. What's wrong with this code?
+3. What's wrong with this code?
 ```
 function MyComponent() {
     return (
