@@ -1,6 +1,10 @@
 # ReactQuestionAnswer
+## What is React?
+React is a JS library for SPA's (single page applications)
 
-React is an open source JS framework library
+## Advantage of React?
+Uses a Virtual DOM (virtual representation of the real DOM) to render the view. </br> 
+Each time the data changes in a react app, a new virtual DOM gets created. Creating a virtual DOM is much faster than rendering the UI inside the browser.</br>
 
 ## REACT
 1. Why do we need to `import React from "react"` in our files?</br>
@@ -155,27 +159,30 @@ for(let i = 0; i < someArray.length; i++) {
 1. How would you describe the concept of "state"?
 A way for React to remember saved values from within a component.
 This is similar to declaring variables from within a component,
-with a few added bonuses (which we'll get to later)
+with a few added bonuses (which we'll get to later).
+useState hook returns an array of two items, the first item contains the current state, and the second item is a function used to update the state.
 
-
-2. When would you want to use props instead of state?
+3. When would you want to use props instead of state?
 Anytime you want to pass data into a component so that
 component can determine what will get displayed on the
 screen.
 
 
-3. When would you want to use state instead of props?
+4. When would you want to use state instead of props?
 Anytime you want a component to maintain some values from
 within the component. (And "remember" those values even
 when React re-renders the component).
 
 
-4. What does "immutable" mean? Are props immutable? Is state immutable?
+5. What does "immutable" mean? Are props immutable? Is state immutable?
 Unchanging. Props are immutable. State is mutable.
 
 ## CHANGING STATE 
+#### Remember useState hook returns an array of two items, the first: current state, and the second: a function to update the state.
+
 1. You have 2 options for what you can pass in to a
    state setter function (e.g. `setCount`). What are they?
+   Remember useState hook returns an array of two items, the first: current state, and the second: a function to update the state.
    
 a. New value of state (setCount(42))
 b. Callback function - whatever the callback function 
