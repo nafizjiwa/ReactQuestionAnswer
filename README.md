@@ -1,5 +1,6 @@
 # ReactQuestionAnswer
 
+React is an open source JS framework library
 
 ## REACT
 1. Why do we need to `import React from "react"` in our files?</br>
