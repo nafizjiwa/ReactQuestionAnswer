@@ -114,7 +114,7 @@ Make a component more reusable.</br>
    <MyAwesomeHeader title="???" /></br>
 
       function Header(props) {
-          return <h1>{props.title}</h1>;
+          return <h1>`{props.title}`</h1>;
       }   
 
 
