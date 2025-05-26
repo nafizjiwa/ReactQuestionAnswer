@@ -81,7 +81,8 @@ function MyComponent() {
     )
 }
 ```
-First, it's rendered inside another component or Second, within ReactDOM.createRoot().render(<MyComponent />) in your main file</br>
+First, it's rendered inside another component or</br>
+Second, rendered within ReactDOM.createRoot().render(<MyComponent />) in your main file</br>
 optionally ReactDOM.render(<Header />, document.getElementById("root")).
 
 3. What's wrong with this code?
