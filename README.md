@@ -102,11 +102,11 @@ ReactDOM.render(<Header />, document.getElementById("root"))</br>
 ReactDOM.render() is outdated after React 18 </br>
 USE ReactDOM.createRoot():  </br>
 const root = ReactDOM.createRoot(document.getElementById("root"));</br>
-root.render(<Header />);</br>
+`root.render(<Header />)`;</br>
 or</br>
 const rootElement = document.getElementById("root");</br>
 const root = ReactDOM.createRoot(rootElement);</br>
-root.render(<Header />); (render the Header component at the root element.)</br>
+`root.render(<Header />)`; (render the Header component at the root element.)</br>
 
 
 ## PROPS
