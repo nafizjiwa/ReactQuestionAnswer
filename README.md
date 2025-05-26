@@ -75,15 +75,15 @@ They are reusable modules that renders a part of our overall application. </br>
 
 2. What's wrong with this code?
 ```
-function MyComponent() {
-    return (
-        <small>I'm tiny text!</small>
-    )
-}
+      function MyComponent() {
+          return (
+              <small>I'm tiny text!</small>
+          )
+      }
 ```
-First, it's rendered inside another component or</br>
-Second, rendered within ReactDOM.createRoot().render(<MyComponent />) in your main file</br>
-optionally ReactDOM.render(<Header />, document.getElementById("root")).
+First, it must be rendered inside a Main component, like App() or</br>
+Second, render it within `ReactDOM.createRoot().render(<MyComponent />)` as a main file itself</br>
+optionally `ReactDOM.render(<Header />, document.getElementById("root"))`.
 
 3. What's wrong with this code?
 ```
