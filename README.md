@@ -86,15 +86,15 @@ optionally ReactDOM.render(<Header />, document.getElementById("root")).
 
 3. What's wrong with this code?
 ```
-function Header() {
-    return (
-        <header>
-            <nav>
-                <img src="./react-logo.png" width="40px" />
-            </nav>
-        </header>
-    )
-}
+            function Header() {
+                return (
+                    <header>
+                        <nav>
+                            <img src="./react-logo.png" width="40px" />
+                        </nav>
+                    </header>
+                )
+            }
 
 ReactDOM.render(<Header />, document.getElementById("root"))</br>
 ```
@@ -110,11 +110,11 @@ Make a component more reusable.</br>
 
 2. How do you pass a prop into a component?</br>
 
-   <MyAwesomeHeader title="???" /></br>
-
-      function Header(props) {
-          return <h1>`{`props.title`}`</h1>;
-      }   
+            <MyAwesomeHeader title="???" /></br>
+         
+               function Header(props) {
+                   return <h1>`{`props.title`}`</h1>;
+               }   
 
 
 3. Can I pass a custom prop (e.g. `blahblahblah={true}`) to a native DOM element? (e.g. <div blahblahblah={true}>) Why or why not? </br>
@@ -124,14 +124,14 @@ And real DOM elements only have the properties/attributes specified in the HTML 
 
 4. How do I receive props in a component?</br>
 
-   function Navbar(props) {
-       console.log(props.blahblahblah)
-       return (
-           <header>
-               ...
-           </header>
-       )
-   }
+               function Navbar(props) {
+                   console.log(props.blahblahblah)
+                   return (
+                       <header>
+                           ...
+                       </header>
+                   )
+               }
 
 ## MAP
 1. What does the `.map()` array method do?</br>
@@ -151,7 +151,7 @@ that can be displayed on the page.
 It makes our code more "self-sustaining" - not requiring
 additional changes whenever the data changes.
 
-for(let i = 0; i < someArray.length; i++) {
+      for(let i = 0; i < someArray.length; i++) {
     
 }
 
