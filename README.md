@@ -207,31 +207,31 @@ based on a condition of some sort
 
 
 2. When would you use &&?
-When you want to either display something or NOT display it
+When you want to either display something or NOT display it</br>
 
 
 3. When would you use a ternary?
-When you need to decide which thing among 2 options to display
+When you need to decide which thing among 2 options to display</br>
 
 
-4. What if you need to decide between > 2 options on
-   what to display?
-Use an `if...else if... else` conditional or a `switch` statement
+4. What if you need to decide on more than 2 options to display? </br>
+Use an `if...else if... else` conditional or </br>
+a `switch` statement</br>
 
 
-function App() {
-    let someVar
-    if () {
-        someVar = <SomeJSX />
-    } else if() {
-        ...
-    } else {
-        ...
-    }
-    return (
-        <div>{someVar}</div>
-    )
-}
+      function App() {
+          let someVar
+          if () {
+              someVar = <SomeJSX />
+          } else if() {
+              ...
+          } else {
+              ...
+          }
+          return (
+              <div>{someVar}</div>
+          )
+      }
 ## FORMS
 1. In a vanilla JS app, at what point in the form submission
    process do you gather all the data from the filled-out form?
