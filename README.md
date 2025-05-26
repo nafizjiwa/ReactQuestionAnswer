@@ -30,7 +30,6 @@ We need our JSX to be nested under a single parent element. </br>
             </div>
         )
 
-
 4. What does it mean for something to be "declarative" instead of "imperative"?</br>
 
    `Declarative` means I can tell the computer WHAT to do </br>
@@ -114,7 +113,7 @@ Make a component more reusable.</br>
    <MyAwesomeHeader title="???" /></br>
 
       function Header(props) {
-          return <h1>`{props.title}`</h1>;
+          return <h1>`{`props.title`}`</h1>;
       }   
 
 
