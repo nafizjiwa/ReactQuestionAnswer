@@ -110,6 +110,7 @@ Make a component more reusable.</br>
 
 
 2. How do you pass a prop into a component?</br>
+
    <MyAwesomeHeader title="???" /></br>
 
       function Header(props) {
