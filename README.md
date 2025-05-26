@@ -219,19 +219,19 @@ Use an `if...else if... else` conditional or </br>
 a `switch` statement</br>
 
 
-      function App() {
-          let someVar
-          if () {
-              someVar = <SomeJSX />
-          } else if() {
-              ...
-          } else {
-              ...
-          }
-          return (
-              <div>{someVar}</div>
-          )
-      }
+            function App() {
+                let someVar
+                if () {
+                    someVar = <SomeJSX />
+                } else if() {
+                    ...
+                } else {
+                    ...
+                }
+                return (
+                    <div>{someVar}</div>
+                )
+            }
 ## FORMS
 1. In a vanilla JS app, at what point in the form submission
    process do you gather all the data from the filled-out form?
