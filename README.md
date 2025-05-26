@@ -112,9 +112,9 @@ Make a component more reusable.</br>
 2. How do you pass a prop into a component?</br>
    <MyAwesomeHeader title="???" /></br>
 
-function Header(props) {
-    return <h1>{props.title}</h1>;
-}
+      function Header(props) {
+          return <h1>{props.title}</h1>;
+      }   
 
 
 3. Can I pass a custom prop (e.g. `blahblahblah={true}`) to a native DOM element? (e.g. <div blahblahblah={true}>) Why or why not? </br>
@@ -123,14 +123,15 @@ And real DOM elements only have the properties/attributes specified in the HTML 
 
 
 4. How do I receive props in a component?</br>
-function Navbar(props) {
-    console.log(props.blahblahblah)
-    return (
-        <header>
-            ...
-        </header>
-    )
-}
+
+   function Navbar(props) {
+       console.log(props.blahblahblah)
+       return (
+           <header>
+               ...
+           </header>
+       )
+   }
 
 ## MAP
 1. What does the `.map()` array method do?</br>
